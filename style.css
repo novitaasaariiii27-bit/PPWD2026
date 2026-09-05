@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e0d3; /* Krem retro */
+  font-family: 'Tahoma', sans-serif;
+  color: #1a1a1a;
+  padding-bottom: 40px;
+}
+
+/* ===== Top Nav Bar ===== */
+.top-nav {
+  background-color: #d0c9b7;
+  border-bottom: 2px solid #b5ad98;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tab {
+  background: #e5e0d3;
+  border: 1px solid #7d7565;
+  border-bottom: none;
+  padding: 4px 14px;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #ffffff;
+  font-weight: bold;
+}
+
+.nav-time {
+  font-size: 11px;
+  color: #444;
+  font-weight: bold;
+}
+
+/* ===== Layout Utama ===== */
+.main-container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.left-col {
+  flex: 1.2;
+}
+
+.right-col {
+  flex: 1;
+  position: relative;
+  min-height: 450px;
+}
+
+/* ===== Tipografi Kiri ===== */
+.pixel-heading {
+  font-family: 'VT323', monospace;
+  font-size: 72px;
+  line-height: 0.9;
+  font-weight: normal;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 28px;
+  color: #581845; /* Warna ungu plum tua */
+  margin-bottom: 12px;
+}
+
+.bio-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+.section-block {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #101881; /* Biru klasik */
+  border-bottom: 1px solid #101881;
+  display: inline-block;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+/* Skills Badges */
+.skills-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Education List */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edu-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.edu-year {
+  font-size: 11px;
+  color: #666;
+}
+
+.edu-school {
+  font-size: 13px;
+  color: #111;
+}
+
+.edu-major {
+  font-size: 11px;
+  color: #555;
+  font-style: italic;
+}
+
+/* ===== Windows Pop-up (Kanan) ===== */
+.retro-window {
+  background-color: #c0c0c0; /* Abu-abu khas Windows 98 */
+  border: 2px solid #ffffff;
+  border-right-color: #000000;
+  border-bottom-color: #000000;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  position: absolute;
+}
+
+.window-header {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: #ffffff;
+  padding: 3px 6px;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.btn-close {
+  background: #c0c0c0;
+  border: 1px solid #ffffff;
+  border-right-color: #000000;
+  border-bottom-color: #000000;
+  font-size: 9px;
+  font-weight: bold;
+  width: 16px;
+  height: 14px;
+  line-height: 12px;
+  cursor: pointer;
+}
+
+.window-body {
+  padding: 6px;
+  background-color: #c0c0c0;
+}
+
+/* Window Foto */
+.photo-window {
+  top: 0;
+  left: 0;
+  width: 280px;
+  z-index: 1;
+}
+
+.profile-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #808080;
+}
+
+/* Window Socials (Menumpuk di kanan bawah) */
+.socials-window {
+  top: 220px;
+  right: 0;
+  width: 230px;
+  z-index: 2;
+}
+
+.social-list {
+  list-style: none;
+  font-size: 12px;
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid #808080;
+}
+
+.social-list li {
+  margin-bottom: 6px;
+}
+
+.social-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsif untuk Layar Kecil */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .right-col {
+    min-height: 500px;
+  }
+  .photo-window {
+    position: relative;
+    width: 100%;
+  }
+  .socials-window {
+    position: relative;
+    top: -40px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
