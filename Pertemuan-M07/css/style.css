@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-/* Reset & Variables */
-=======
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;700;900&display=swap');
->>>>>>> Stashed changes
 
 * {
     margin: 0;
@@ -11,23 +7,6 @@
 }
 
 :root {
-<<<<<<< Updated upstream
-    --primary: #2563eb;
-    --dark: #1e293b;
-    --light: #f8fafc;
-    --gray: #94a3b8;
-}
-
-body {
-    font-family: ‘Segoe UI’, sans-serif;
-    background: var(--light);
-    color: var(--dark);
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-=======
     --bg-base: #fff0f5;
     --bg-dot: #ffb6c1;
     --text-color: #4a2c2a;
@@ -62,18 +41,10 @@ body {
 
 .container {
     max-width: 900px;
->>>>>>> Stashed changes
     margin: 0 auto;
     padding: 0 20px;
 }
 
-<<<<<<< Updated upstream
-/* Navigation */
-
-nav {
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-=======
 .font-cursive {
     font-family: 'Fredoka', sans-serif;
     font-weight: 700;
@@ -87,15 +58,11 @@ nav {
 nav {
     background: var(--card-bg);
     border-bottom: 4px dashed var(--primary-pink);
->>>>>>> Stashed changes
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-<<<<<<< Updated upstream
-=======
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
->>>>>>> Stashed changes
 }
 
 nav .container {
@@ -105,12 +72,6 @@ nav .container {
     padding: 15px 20px;
 }
 
-<<<<<<< Updated upstream
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-=======
 .logo {
     font-family: 'Fredoka', sans-serif;
     font-size: 1.8rem;
@@ -123,103 +84,10 @@ nav .container {
     list-style: none;
     gap: 15px;
     align-items: center;
->>>>>>> Stashed changes
 }
 
 .nav-links a {
     text-decoration: none;
-<<<<<<< Updated upstream
-    color: var(--dark);
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--primary);
-}
-
-/* Hero Section */
-
-.hero {
-    padding: 150px 0 100px;
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero-content span {
-    color: var(--primary);
-}
-
-.btn {
-    display: inline-block;
-    background: var(--primary);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(37,99,235,0.3);
-}
-
-/* Projects */
-
-.projects {
-    padding: 80px 0;
-    background: white;
-}
-
-.projects h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    background: var(--light);
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Footer */
-
-footer {
-    background: var(--dark);
-    color: white;
-    text-align: center;
-    padding: 30px;
-=======
     color: var(--text-color);
     font-weight: 900;
     background: var(--bg-base);
@@ -431,5 +299,4 @@ footer {
     background: var(--card-bg);
     border-top: 4px dashed var(--primary-pink);
     font-weight: 900;
->>>>>>> Stashed changes
 }
