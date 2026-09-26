@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Novita</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Novita ✿</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li><a href="contact.html" class="active">Kontak</a></li>
+                <li><button id="theme-toggle">🌙 Mode Cokelat</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="sticker-card">
+                <h1 class="font-cursive">Kirim Pesan!</h1>
+                <p style="font-weight: bold; margin-bottom: 25px;">Ingin berdiskusi, memberikan saran, atau melakukan kolaborasi proyek? Kirim pesanmu di bawah ini.</p>
+                
+                <!-- Form Terintegrasi Email via Formspree -->
+                <form action="https://formspree.io/f/xqpabvlb" method="POST" id="contact-form">
+                    <input type="text" name="nama" placeholder="Nama Lengkap / Panggilan..." required>
+                    <input type="email" name="email" placeholder="Email Aktifmu..." required>
+                    <textarea name="pesan" rows="5" placeholder="Tuliskan pesan atau penawaran kerja sama di sini..." required></textarea>
+                    <button type="submit" class="btn-submit">Kirim Pesan Ke Email 💌</button>
+                </form>
+
+                <div style="margin-top: 40px; border-top: 2px dashed var(--primary-pink); padding-top: 20px;">
+                    <h3 class="font-cursive" style="font-size: 1.8rem;">Atau Temukan Aku Di:</h3>
+                    <div class="social-links" style="margin-top: 15px;">
+                        <a href="https://github.com/novitaasaariiii27-bit" target="_blank" class="social-btn">GitHub 🐙</a>
+                        <a href="https://instagram.com/vitazsrr" target="_blank" class="social-btn">Instagram 📸</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Novitasari - Sistem Informasi UNTAN 🎀</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
