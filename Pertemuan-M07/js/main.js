@@ -1,4 +1,4 @@
-// ========== 1. TYPING EFFECT ==========
+//========== 1. TYPING EFFECT==========
 const typingText = document.getElementById('typing-text');
 const names = ['Ahmad Fauzi', 'Web Developer', 'Mahasiswa SI'];
 let nameIndex = 0;
